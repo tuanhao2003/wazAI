@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hidden/HPBD.css">
+    <script src="hidden/HPBD.js"></script>
+    <title>Happy Birth Day</title>
+</head>
+<body onload="reLoad();">
+    <audio src="hidden/ms.mp3" autoplay loop></audio>
+    <div class="slide">
+        <div>
+            <div class="title1">Hé Lô</div>
+            <div class="content1">CÙNG TOY XEM CÓ GÌ HÔM NAY NHÓ</div>
+        </div>
+        <img src="hidden/co3.webp" alt="." style="width: 300px; height: auto; position: absolute; bottom: 0; left: -10px;">
+        <img src="hidden/hoa1.webp" alt="." style="width: auto; height: 200px; position: absolute; bottom: 20px; left: 50px; transform: rotate(15deg);">
+        <img src="hidden/hoa1.webp" alt="." style="width: auto; height: 200px; position: absolute; bottom: 20px; left: 50px; transform: rotate(-35deg);">
+        <img src="hidden/co3.webp" alt="." style="width: 350px; height: auto; position: absolute; bottom: 0; left: 45px;">
+        <img src="hidden/co3.webp" alt="." style="width: 200px; height: auto; position: absolute; bottom: 0; left: 100px;">
+        
+        <img src="hidden/co2.webp" alt="." style="width: 300px; height: auto; position: absolute; bottom: 0; right: -50px;">
+        <img src="hidden/co4.webp" alt="." style="width: 250px; height: auto; position: absolute; bottom: 0; right: 200px; ">
+        <img src="hidden/co3.webp" alt="." style="width: 230px; height: auto; position: absolute; bottom: -20px; right: 45px;transform: scaleX(-101%);">
+        <img src="hidden/co3.webp" alt="." style="width: 230px; height: auto; position: absolute; bottom: -20px; right: -80px;">
+        <img src="hidden/ong.webp" alt="." id="bee">
+        <img src="hidden/co1.webp" alt="." onclick="beeUp();" style="width: 300px; height: auto; position: absolute; bottom: -50px; left: 50%; transform: translateX(-50%);">
+    </div>
+
+    <div class="slide">
+        <div class="title2" id="who">CHÚNG TA CÙNG XEM ĐÂY LÀ AI ?</div>
+        <div class="flexContent">
+            <div class="content2"><br></div>
+            <div class="imgBox">
+                <img src="hidden/1.jpg" alt=".">
+                <div class="coverGround" onclick="unCover(this);">?</div>
+            </div>
+            <div class="content2" id="laThao">LÀ THẢO CHỨ AI?</div>
+        </div>
+        <img src="hidden/kl1.webp" alt="." class="klTrai" id="klTrai1" style="width: 250px; height: auto; top:5%;">
+        <img src="hidden/kl2.webp" alt="." class="klTrai" id="klTrai2" style="width: 250px; height: auto; bottom: 5%;">
+        <img src="hidden/kl3.webp" alt="." class="klPhai" id="klPhai1" style="width: 300px; height: auto; top:5%;">
+        <img src="hidden/kl4.webp" alt="." class="klPhai" id="klPhai2" style="width: 250px; height: auto; bottom: 5%;">
+    </div>
+
+    <div class="slide">
+        <div class="title3" onclick="showImg();" id="hiddenTitle">ZỊ CÓ AI BIẾT NGÀY NÀY NĂM NGOÁI ĐÃ XẢY RA CHIỆN GÌ VỚI THẢO KHUM
+        </div>
+        <div class="flexContent" id="hiddenImg">
+            <div class="imgBox">
+                <img src="hidden/2.jpg" alt=".">
+            </div>
+            <div class="content3">Ồ LÀ SINH NHẬT THẢO</div>
+        </div>
+        <img src="hidden/trung2.webp" alt="." class="trung" style="left: 5%; transform: rotate(-10deg);">
+        <img src="hidden/trung3.webp" alt="." class="trung" style="left:15%; transform: rotate(10deg);">
+        <img src="hidden/trung4.webp" alt="." class="trung" style="right: 12%; transform: rotate(-12deg);">
+        <img src="hidden/trung5.webp" alt="." class="trung" style="right: 5%; transform: rotate(15deg);">
+    </div>
+
+    <div class="slide">
+        <div class="flexContent" style="height: 100%;" id="ct4">
+            <div style="display: flex; justify-content: space-evenly;">
+                <div class="imgBox" style="width: 45%;"><img src="hidden/3.jpg" alt=""></div>
+                <div class="imgBox" style="width: 45%;"><img src="hidden/4.jpg" alt=""></div>
+            </div>
+            <div class="content4">HONG CÓ HÌNH MỚI COI ĐỠ IK</div>
+        </div>
+        <div class="title4" id="tt4">SINH NHẬT VUI VẺ NHÓ</div>
+        <img src="hidden/trung6.webp" alt="." class="trung" style="right: 5%; bottom: 25%; width: 100px;" onclick="cmsn();">
+        <img src="hidden/kl5.webp" alt="." id="happy">
+        <img src="hidden/trung.webp" alt="." style="left: 10%; bottom: -20px;position: absolute;width: 200px;height: auto;" onclick="klMove();">
+    </div>
+</body>
+</html>

@@ -1,0 +1,382 @@
+body{
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* slide 1 */
+.slide{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("bg.jpg");
+    background-size:contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.title1{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100%;
+    top:40%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: lime;
+    font-family: century;
+}
+
+.content1 {
+    position: absolute;
+    font-size: 25px;
+    font-weight: bold;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: lime;
+    font-family: century;
+    animation: zoomOut 2s linear;
+}
+
+#bee{
+    width: 150px; 
+    height: auto; 
+    position: absolute; 
+    bottom: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+#bee.fly{
+    animation: ongBay 10s ease-in-out;
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(100%);
+    }
+    50% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes ongBay{
+    0%{
+        transform: rotate(0deg) translateX(-50%);
+        bottom: 0;
+        left: 50%;
+    }
+    10%{
+        transform: rotate(27deg);
+        bottom: 3%;
+        left: 68%;
+    }
+    20%{
+        transform: rotate(54deg);
+        bottom: 10%;
+        left: 83%;
+    }
+    30%{
+        transform: rotate(65deg);
+        bottom: 17%;
+        left: 95%;
+    }
+    40%{
+        transform: rotate(73deg);
+        bottom: 30%;
+        left: 50%;
+    }
+    45%{
+        transform: rotate(95deg);
+        bottom: 25%;
+        left: 30%;
+    }
+    50%{
+        transform: rotate(86deg);
+        bottom: 20%;
+        left: 10%;
+    }
+    60%{
+        transform: rotate(72deg);
+        bottom: 32%;
+        left: 45%;
+    }
+    70%{
+        transform: rotate(80deg);
+        bottom: 23%;
+        left: 50%;
+    }
+    80%{
+        transform: rotate(50deg);
+        bottom: 10%;
+        left: 50%;
+    }
+    90%{
+        transform: rotate(30deg);
+        bottom: 0;
+        left: 50%;
+    }
+    100%{
+        transform: rotate(0deg) translateX(-50%);
+        bottom: 0;
+        left: 50%;
+    }
+}
+
+/* slide 2 */
+.title2{
+    position: absolute;
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    top:10%;
+    left: 0;
+    color:limegreen;
+    font-family: century;
+    text-align: center;
+    
+}
+
+.flexContent {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    bottom: 5%;
+}
+
+.imgBox {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    margin: 0 20px 0 20px;
+}
+
+.coverGround{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color:darkseagreen;
+    border: 1px solid black;
+    color: white;
+    font-size: 100px;
+    font-family: century;
+    transition: 1s ease-in-out;
+}
+
+.coverGround.unCover{
+    transform: translateX(-110%);
+}
+
+.content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: lime;
+    font-family: century;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1s ease-in;
+}
+
+#laThao.moveOn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.klTrai{
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%) scaleX(-101%);
+    transition: 2s ease-in-out;
+}
+
+.klPhai{
+    position: absolute;
+    right: 0;
+    transform: translateX(100%);
+    transition: 2s ease-in-out;
+}
+
+.klTrai.active{
+    transform: translateX(-40%) scaleX(-101%) rotate(-45deg);
+    animation: trai 1s ease-out;
+}
+
+.klPhai.active{
+    transform: translateX(40%) rotate(-45deg);
+    animation: phai 1s ease-out;
+}
+
+@keyframes trai{
+    0%{
+        transform: translateX(-100%) scaleX(-101%) rotate(-45deg);
+    }
+    50%{
+        transform: translateX(-35%) scaleX(-101%) rotate(-60deg);
+    }
+    100%{
+        transform: translateX(-40%) scaleX(-101%) rotate(-45deg);
+    }
+}
+
+@keyframes phai{
+    0%{
+        transform: translateX(100%) rotate(-45deg);
+    }
+    50%{
+        transform: translateX(35%) rotate(-60deg);
+    }
+    100%{
+        transform: translateX(40%) rotate(-45deg);
+    }
+}
+
+
+/* slide 3 */
+.title3{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    top:50%;
+    transform: translateY(-50%);
+    left: 0;
+    color:limegreen;
+    font-family: century;
+    text-align: center;
+}
+
+.content3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: lime;
+    font-family: century;
+}
+
+.trung{
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: auto;
+}
+
+.title4{
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    top:50%;
+    transform: translateY(-50%) scale(0%);
+    left: 0;
+    color:limegreen;
+    font-family: century;
+    text-align: center;
+    opacity: 0;
+}
+
+.content4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: lime;
+    font-family: century;
+    opacity: 1;
+}
+
+#happy{
+    left: 12%; 
+    width: 200px; 
+    height: auto; 
+    bottom: 0; 
+    transform: translateY(50%); 
+    position: absolute;
+    transition: 2s ease-in-out;
+}
+
+#happy.active{
+    transform: translateY(-15%); 
+}
+
+#hiddenImg{
+    height: 100%;
+    opacity: 0;
+    transform: scale(0%);
+}
+
+#hiddenImg.active{
+    opacity: 1;
+    transform: scale(100%) rotate(360deg);
+    transition: 3s linear;
+}
+
+#hiddenTitle{
+    opacity: 1;
+    transform: scale(100%) translateY(-50%);
+}
+
+#hiddenTitle.active{
+    opacity: 0;
+    transform: scale(0%);
+    transition: 1s linear;
+}
+
+.trung:hover{
+    animation: rung 1s linear infinite;
+}
+
+@keyframes rung {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+    25%{
+        transform: rotate(10deg);
+        transform-origin: bottom;
+    }
+    50%{
+        transform: rotate(-10deg);
+        transform-origin: bottom;
+    }
+    100%{
+        transform: rotate(0deg);
+        transform-origin: bottom;
+    }
+}
+
+#tt4.active{
+    opacity: 1;
+    font-size: 50px;
+    transform: scale(100%) translateY(-50%);
+    transition: 1s ease-in-out;
+}
+
+#ct4.active{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
